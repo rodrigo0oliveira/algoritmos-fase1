@@ -11,7 +11,7 @@ public class Recursivo {
 
     public static long chamadas = 0;
 
-    public static ResolverResponse recursivo(String entrada) {
+    public static ResolverResponse resolver(String entrada) {
         try {
             ResolverResponse response = JsonLeitor.lerEntrada(entrada);
             if (!StatusResponse.OK.getDescricao().equals(response.getStatus())) {

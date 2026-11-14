@@ -2,8 +2,8 @@ package com.algoritmos.entidades;
 
 public enum StatusResponse {
     OK("OK"),
-    ENTRADA_INVALIDA("entrada inválida"),
-    SEM_CAMINHO("sem caminho");
+    ENTRADA_INVALIDA("entrada_inválida"),
+    SEM_CAMINHO("sem_caminho");
 
     private final String descricao;
 

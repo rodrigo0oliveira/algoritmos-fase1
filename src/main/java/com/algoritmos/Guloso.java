@@ -32,7 +32,12 @@ public class Guloso {
     }
 
     public static Integer guloso(Integer[][] custos) {
+        if (custos[0][0] == null) {
+            return null;
+        }
+
         int total = custos[0][0];
+
         int ultimaLinha = custos.length - 1;
         int ultimaColuna = custos[0].length - 1;
         int linha = 0;

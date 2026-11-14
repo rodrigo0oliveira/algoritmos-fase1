@@ -28,19 +28,19 @@ class RoboTest {
 
 
     private static void assertOk(String json, int custoEsperado) {
-        ResolverResponse r = Recursivo.recursivo(json);
+        ResolverResponse r = Recursivo.resolver(json);
         assertEquals(OK, r.getStatus(), json);
         assertEquals(custoEsperado, r.getCusto(), json);
     }
 
     private static void assertSemCaminho(String json) {
-        ResolverResponse r = Recursivo.recursivo(json);
+        ResolverResponse r = Recursivo.resolver(json);
         assertEquals(SEM_CAMINHO, r.getStatus(), json);
         assertNull(r.getCusto(), json);
     }
 
     private static void assertInvalida(String json) {
-        ResolverResponse r = Recursivo.recursivo(json);
+        ResolverResponse r = Recursivo.resolver(json);
         assertEquals(ENTRADA_INVALIDA, r.getStatus(), json);
         assertNull(r.getCusto(), json);
         assertNotNull(r.getMensagem(), json);

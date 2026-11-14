@@ -1,7 +1,6 @@
 package com.algoritmos;
 
 import static com.algoritmos.Guloso.guloso;
-import static com.algoritmos.Recursivo.recursivo;
 
 public class Main {
     public static void main(String[] args) {
@@ -59,7 +58,7 @@ public class Main {
 
 
         System.out.println("Algoritmo recursivo com entrada do projeto");
-        recursivo(entradaProjeto);
+        Recursivo.resolver(entradaProjeto);
 
         System.out.println("===========================");
 
@@ -69,7 +68,7 @@ public class Main {
         System.out.println("===========================");
 
         System.out.println("Algoritmo recursivo com entrada criada");
-        recursivo(entradaCriada);
+        Recursivo.resolver(entradaCriada);
 
         System.out.println("===========================");
         System.out.println("Algoritmo guloso com entrada criada");
@@ -78,31 +77,31 @@ public class Main {
         System.out.println("===========================");
         System.out.println("Medição 2 x 3 (esperado: 9 chamadas)");
         Recursivo.chamadas = 0;
-        recursivo(grade2x3);
+        Recursivo.resolver(grade2x3);
 
         System.out.println("===========================");
         System.out.println("Medição 3 x 3 (esperado: 19 chamadas)");
         Recursivo.chamadas = 0;
-        recursivo(grade3x3);
+        Recursivo.resolver(grade3x3);
 
         System.out.println("===========================");
         System.out.println("Medição 6 x 6 (esperado: 923 chamadas)");
         Recursivo.chamadas = 0;
-        recursivo(grade6x6);
+        Recursivo.resolver(grade6x6);
 
         System.out.println("===========================");
         System.out.println("Medição 10 x 10 (esperado: 184.755 chamadas)");
         Recursivo.chamadas = 0;
-        recursivo(grade10x10);
+        Recursivo.resolver(grade10x10);
 
         System.out.println("===========================");
         System.out.println("Medição 1 x 10 (esperado: 10 chamadas)");
         Recursivo.chamadas = 0;
-        recursivo(grade1x10);
+        Recursivo.resolver(grade1x10);
 
         System.out.println("===========================");
         System.out.println("Medição grade do exemplo");
         Recursivo.chamadas = 0;
-        recursivo(entradaProjeto);
+        Recursivo.resolver(entradaProjeto);
     }
 }
